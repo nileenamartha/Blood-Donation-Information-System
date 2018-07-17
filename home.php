@@ -55,16 +55,16 @@
   </div>
  <!--Registration-->
  <div id="reg">
- <button> <h2>Become a <br>blood donor<br></h2><a href="../register/register.php">Register Now</a></button>
+ <button> <h2>Become a <br>blood donor<br></h2><a href="register.php">Register Now</a></button>
 
  </div>
  <div id="reg2">
- <button> <h2>In need of Blood?<br>Post Your Request<br></h2><a href="../acceptor_reg/acceptor_reg.php">Register Now</a></button>
+ <button> <h2>In need of Blood?<br>Post Your Request<br></h2><a href="acceptor_reg.php">Register Now</a></button>
  </div>
 <!--DonorSearch-->
 <div id="DonorSearch">
 <h5>Find a Donor</h5>
-<form methode="get" action="../donor_search_result/search_result.php">
+<form methode="get" action="search_result.php">
 <select name="bloodgroup" required >
 	<option value=""disabled selected><span>Blood Group</span></option>
    <option value="A+ve">A+ve</option>

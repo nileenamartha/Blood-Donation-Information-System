@@ -112,7 +112,7 @@
 <h1>EVERY <span style="font-size:50px;">2</span> SECONDS,<br><span>SOMEONE</span> NEEDS <span>BLOOD</span>.<br><br><span>TAKE A BREAK</span><br>AND DONATE BLOOD.</h1>
 </div>
 <div id="img">
-<img src="blood2.png">
+<img src="https://admeonline.com/wp-content/uploads/2015/07/bloodbank1.jpg">
 </div>
 </section>
 </body>

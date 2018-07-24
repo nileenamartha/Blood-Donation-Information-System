@@ -15,9 +15,9 @@
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-  <li><a href="../logout/logout.php">Logout</a></li>
+  <li><a href="logout.php">Logout</a></li>
   <li><a href="Login_Acceptor.php">MyProfile</a></li>
-  <li><a href="../home/home.php">Home</a></li>
+  <li><a href="home.php">Home</a></li>
 </ul>
 </div>
 <?php

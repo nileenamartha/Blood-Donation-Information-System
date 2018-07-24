@@ -15,9 +15,9 @@
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-  <li><a href="../logout/logout.php">Logout</a></li>
+  <li><a href="logout.php">Logout</a></li>
   <li><a href="Login_Acceptor.php">MyProfile</a></li>
-  <li><a href="/home.php">Home</a></li>
+  <li><a href="home.php">Home</a></li>
 </ul>
 </div>
 <?php
@@ -41,7 +41,7 @@ if(mysqli_num_rows($result)>0)
 <button onclick="window.location.href='../acceptor_edit_profile/edit_acceptor.php'">Edit Profile</button>
 </div>
 <div id="post">
-<button onclick="window.location.href='../post_request/PostRequest.php'">Post Request</button>
+<button onclick="window.location.href='PostRequest.php'">Post Request</button>
 </div>
 <div id="history">
 <button onclick="window.location.href='../acceptor_history/history.php'">History</button>

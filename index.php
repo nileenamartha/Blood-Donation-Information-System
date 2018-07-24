@@ -3,7 +3,7 @@
 	  $lid=$_SESSION["l_id"];
  if(!isset($_SESSION['l_id']))
 	  {
-      header("Location:../home/home.php"); 
+      header("Location:home.php"); 
 	  }
 ?>
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ if(mysqli_num_rows($result)>0)
 <button onclick="window.location.href='../acceptor_history/history.php'">History</button>
 </div>
 <div id="de">
-<button onclick="window.location.href='../confirm/confirm_deactivate_acceptor.php'">Deactivate</button>
+<button onclick="window.location.href='confirm_deactivate_acceptor.php'">Deactivate</button>
 </div>
 </div>
 </section>

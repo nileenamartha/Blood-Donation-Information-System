@@ -6,16 +6,17 @@
 	<!DOCTYPE html>
 	<html>
 	<head>
-	<link rel="stylesheet" href="style.css">
+	<title>LifeStream Blood Donation</title>
+	<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
 	<div id="navBar">
 	<h2>LifeStream</h2>
-	<ul>
-	<li><a href="logout.php">Logout</a></li>
-	<li><a href="feedback.php">FeedBack</a></li>
-	<li><a href="../why_donate_blood/wdb.php">Why Donate Blood</a></li>
-	<li><a href="home.php">Home</a></li>
+	<ul><li><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddy_ayim@gmail.com&item_name=Life+Stream+Blood+Bank&item_number=Fall+Cleanup+Campaign&amount=25%2e00&currency_code=USD">Donate With Paypal</a></li>
+	<li><a href="./logout/logout.php">Logout</a></li>
+	<li><a href="./feedback/feedback.php">FeedBack</a></li>
+	<li><a href="./why_donate_blood/wdb.php">Why Donate Blood</a></li>
+	<li><a href="./">Home</a></li>
 	</ul>
 	</div>
 	<?php
@@ -26,15 +27,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<title>LifeStream Blood Donation</title>
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-  <li><a href="feedback.php">FeedBack</a></li>
-  <li><a href="../why_donate_blood/wdb.php">Why Donate Blood</a></li>
-  <li><a href="home.php">Home</a></li>
+	<li><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddy_ayim@gmail.com&item_name=Life+Stream+Blood+Bank&item_number=Fall+Cleanup+Campaign&amount=25%2e00&currency_code=USD">Donate With Paypal</a></li>
+  <li><a href="./feedback/feedback.php">FeedBack</a></li>
+  <li><a href="./why_donate_blood/wdb.php">Why Donate Blood</a></li>
+  <li><a href="./">Home</a></li>
 </ul>
 </div>
   <?php
@@ -55,16 +58,16 @@
   </div>
  <!--Registration-->
  <div id="reg">
- <button> <h2>Become a <br>blood donor<br></h2><a href="register.php">Register Now</a></button>
+ <button> <h2>Become a <br>blood donor<br></h2><a href="../register/register.php">Register Now</a></button>
 
  </div>
  <div id="reg2">
- <button> <h2>In need of Blood?<br>Post Your Request<br></h2><a href="acceptor_reg.php">Register Now</a></button>
+ <button> <h2>In need of Blood?<br>Post Your Request<br></h2><a href="../acceptor_reg/acceptor_reg.php">Register Now</a></button>
  </div>
 <!--DonorSearch-->
 <div id="DonorSearch">
 <h5>Find a Donor</h5>
-<form methode="get" action="search_result.php">
+<form methode="get" action="./donor_search_result/search_result.php">
 <select name="bloodgroup" required >
 	<option value=""disabled selected><span>Blood Group</span></option>
    <option value="A+ve">A+ve</option>
@@ -112,7 +115,7 @@
 <h1>EVERY <span style="font-size:50px;">2</span> SECONDS,<br><span>SOMEONE</span> NEEDS <span>BLOOD</span>.<br><br><span>TAKE A BREAK</span><br>AND DONATE BLOOD.</h1>
 </div>
 <div id="img">
-<img src="https://admeonline.com/wp-content/uploads/2015/07/bloodbank1.jpg">
+<img src="./images/blood2.png">
 </div>
 </section>
 </body>

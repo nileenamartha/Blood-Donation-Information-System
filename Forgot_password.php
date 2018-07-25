@@ -5,7 +5,7 @@
 	?>
 	<script>
 	alert("Please logout");
-	window.location="../home/home.php";
+	window.location="../index.php";
 	</script>
 	<?php
   }
@@ -15,15 +15,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<title>LifeStream Blood Donation</title>
+<link rel="stylesheet" href="style-Forgot_password.css">
 </head>
 <body>
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-  <li><a href="../feedback/feedback.php">FeedBack</a></li>
-  <li><a href="../why_donate_blood/wdb.php">Why Donate Blood</a></li>
-  <li><a href="../home/home.php">Home</a></li>
+	<li><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddy_ayim@gmail.com&item_name=Life+Stream+Blood+Bank&item_number=Fall+Cleanup+Campaign&amount=25%2e00&currency_code=USD">Donate With Paypal</a></li>
+  	<li><a href="../feedback/feedback.php">FeedBack</a></li>
+  	<li><a href="../why_donate_blood/wdb.php">Why Donate Blood</a></li>
+  	<li><a href="../home/home.php">Home</a></li>
 </ul>
 </div>
   <?php

@@ -7,7 +7,7 @@
 	<html>
 	<head>
 	<title>LifeStream Blood Donation</title>
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 	<div id="navBar">

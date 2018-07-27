@@ -12,10 +12,10 @@
 	<div id="navBar">
 	<h2>LifeStream</h2>
 	<ul>
-	<li><a href="../logout/logout.php">Logout</a></li>
-	<li><a href="../feedback/feedback.php">FeedBack</a></li>
+	<li><a href="logout.php">Logout</a></li>
+	<li><a href="feedback.php">FeedBack</a></li>
 	<li><a href="../why_donate_blood/wdb.php">Why Donate Blood</a></li>
-	<li><a href="../home/home.php">Home</a></li>
+	<li><a href="home.php">Home</a></li>
 	</ul>
 	</div>
 	<?php
@@ -32,9 +32,9 @@
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-  <li><a href="../feedback/feedback.php">FeedBack</a></li>
-  <li><a href="../why_donate_blood/wdb.php">Why Donate Blood</a></li>
-  <li><a href="../home/home.php">Home</a></li>
+  <li><a href="feedback.php">FeedBack</a></li>
+  <li><a href="why_donate_blood/wdb.php">Why Donate Blood</a></li>
+  <li><a href="home.php">Home</a></li>
 </ul>
 </div>
   <?php

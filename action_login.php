@@ -14,22 +14,22 @@ if(mysqli_num_rows($result)>0)
 		$_SESSION["l_id"]=$l_id;
 		if($type=='admin')
 		{
-			header("location:./admin_login/admin_login.php");
+			header("location:admin_login.php");
 		}
 		else if($type=='donor')
 		{
-			header("location:./donor_login/login.php");
+			header("location:login.php");
 		}
 		else if($type=='acceptor')
 		{
-			header("location:./acceptor_login/Login_Acceptor.php");
+			header("location:Login_Acceptor.php");
 		}
 		else 
 		{
 			?>
 					<script>
 					alert("Account under Verification. Try Again Later")
-					window.location="./index.php"
+					window.location="index.php"
 					</script>
 					<?php
 		}
@@ -40,7 +40,7 @@ else
 	?>
 		<script>
         alert("Username or Password Incorrect.")
-        window.location="./index.php"
+        window.location="index.php"
         </script>
     <?php
 }

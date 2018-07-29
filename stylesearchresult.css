@@ -48,18 +48,78 @@ body {
 	line-height: 1;
 	font-family:Castellar;
 	font-size:40px;
-	padding-bottom: 9px;
-}
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-	color:#ffffff;
-	background:#c02729;
 }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+/* Form Module */
+.form-module {
+  position: relative;
+  background: #ffffff;
+  max-width: 400px;
+  width: 100%;
+  border: 3px solid #c02729;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  text-align:middle;
+}
+
+.form-module .form {
+  display: none;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.form-module input {
+  outline: none;
+  display: block;
+  width: 80%;
+  border: 1px solid #c02729;
+  margin: 0px 40px 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+.form-module input:focus {
+  border: 1px solid #33b5e5;
+ 
+}
+.form-module #select {
+  outline: none;
+  display: block;
+  width: 80%;
+  border: 1px solid #c02729;
+  margin: 0px 40px 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+.form-module #select:focus {
+  border: 1px solid #33b5e5;
+ 
+}
+.form-module button {
+  cursor: pointer;
+  background: #c02729;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form-module button:hover {
+  background: #d84143;
+}
+.label {
+    position: relative;
+    left: 38px;
+    top: 0px;
+	font-family:Perpetua;
+	font-size:20px;
+}
+.form-module h2{
+	text-align:center;
+	color: #c02729;
+	font-size: 18px;
+	font-family:Castellar;
+	
 }

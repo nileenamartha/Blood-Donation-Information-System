@@ -1,61 +1,67 @@
 <?php
  session_start();
-	  $lid=$_SESSION["l_id"];
- if(!isset($_SESSION['l_id']))
-	  {
-      header("Location:index.php"); 
-	  }
+ if(isset($_SESSION['l_id']))
+ {
+	?>
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>LifeStream Blood Donation</title>
+	<link rel="stylesheet" href="stylefeedback.css">
+	</head>
+	<body>
+	<div id="navBar">
+	<h2>LifeStream</h2>
+	<ul>
+	<li><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddy_ayim@gmail.com&item_name=Life+Stream+Blood+Bank&item_number=Fall+Cleanup+Campaign&amount=25%2e00&currency_code=USD">Donate With Paypal</a></li>
+	<li><a href="logout.php">Logout</a></li>
+	<li><a href="feedback.php">FeedBack</a></li>
+	<li><a href="wdb.php">Why Donate Blood</a></li>
+	<li><a href="home.php">Home</a></li>
+	</ul>
+	</div>
+	<?php
+  }
+  else
+  {
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>LifeStream Blood Donation</title>
-<link rel="stylesheet" href="styleadminfeedback.css">
+<link rel="stylesheet" href="stylesearchresult.css">
 </head>
 <body>
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-<li><a href="logout.php">Logout</a></li>
-  <li><a href="admin_login.php">MyProfile</a></li>
-  <li><a href="index.php">Home</a></li>
+	<li><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddy_ayim@gmail.com&item_name=Life+Stream+Blood+Bank&item_number=Fall+Cleanup+Campaign&amount=25%2e00&currency_code=USD">Donate With Paypal</a></li>
+  <li><a href="feedback.php">FeedBack</a></li>
+  <li><a href="wdb.php">Why Donate Blood</a></li>
+  <li><a href="home.php">Home</a></li>
 </ul>
 </div>
-  <body>
-<div class="title">
-  <h2>Feedback</h2>
-  <table>
-  <tr>
-  	<th>Sl no</th>
-    <th>Date</th>
-    <th>Name</th>
-    <th>Email</th>
-	<th>Location</th>
-	<th>Suggestion</th>
-  </tr>
-   <?php
-   $i=1;
-  $conn=mysqli_connect("localhost","root","","blood_info");
-  $sql="select * from feedback";
-  $result=mysqli_query($conn,$sql);
-  if(mysqli_num_rows($result)>0)
-  {
-	  while($data=mysqli_fetch_array($result))
-	  {
-  ?>
-  <tr>
-    <th><?php echo $i++?></th>
-    <th><?php echo $data["date"]?></th>
-    <th><?php echo $data["name"]?></th>
-    <th><?php echo $data["email"]?></th>
-	<th><?php echo $data["location"]?></th>
-	<th><?php echo $data["suggestion"]?></th>
-  </tr>
   <?php
-	  }
   }
   ?>
-  </table>
+  <body>
+<div class="title">
+  <h2>feedBack</h2>
 </div>
+<!-- Form Module-->
+<div class="module form-module">
+    <form style="margin-top: 13px;" method="post" action="action_send.php">
+	  <label class="label"> Name</label><input type="text"name="name" required />
+	  <label class="label">Email</label><input type="email"name="email" required />
+	  <label class="label"> Location</label><input type="text"name="location"required />
+	   <label class="label">Suggestion</label>
+       <textarea id="select" name="suggestion">
+       </textarea>
+    <button>Send</button>
+	</form>
+  </div>   
+  </body>
+</html>
+	
 </body>
 </html>

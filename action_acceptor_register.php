@@ -17,7 +17,7 @@ $query=mysqli_query($conn,$sql);
 		?>
 		<script>
 			alert("Registration Completed. Please Login Using your Email and Password");
-			window.location.href="../index.php";
+			window.location.href="index.php";
 		</script>
 	<? }
 	else{

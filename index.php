@@ -67,7 +67,7 @@
 <!--DonorSearch-->
 <div id="DonorSearch">
 <h5>Find a Donor</h5>
-<form methode="get" action="./donor_search_result/search_result.php">
+<form methode="get" action="search_result.php">
 <select name="bloodgroup" required >
 	<option value=""disabled selected><span>Blood Group</span></option>
    <option value="A+ve">A+ve</option>
@@ -115,7 +115,7 @@
 <h1>EVERY <span style="font-size:50px;">2</span> SECONDS,<br><span>SOMEONE</span> NEEDS <span>BLOOD</span>.<br><br><span>TAKE A BREAK</span><br>AND DONATE BLOOD.</h1>
 </div>
 <div id="img">
-<img src="./images/blood2.png">
+<img src="blood2.png">
 </div>
 </section>
 </body>

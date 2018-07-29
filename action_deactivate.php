@@ -2,7 +2,7 @@
 session_start();
 $lid=$_SESSION["l_id"];
 $conn = mysqli_connect("localhost", "root", "","blood_info");
-$sql="delete from acceptor_register where l_id='$lid'";
+$sql="delete from donor_register where l_id='$lid'";
 $result=mysqli_query($conn,$sql);
 $sql="delete from login where id='$lid'";
 $result=mysqli_query($conn,$sql);
@@ -17,3 +17,6 @@ if($result)
 }
 session_destroy();
 ?>
+
+
+ 

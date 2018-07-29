@@ -3,7 +3,7 @@
 	  $lid=$_SESSION["l_id"];
  if(!isset($_SESSION['l_id']))
 	  {
-      header("Location:../home/home.php"); 
+      header("Location:home.php"); 
 	  }
 ?>
 <!DOCTYPE html>
@@ -16,9 +16,9 @@
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-  <li><a href="../logout/logout.php">Logout</a></li>
+  <li><a href="logout.php">Logout</a></li>
   <li><a href="Login_Acceptor.php">MyProfile</a></li>
-  <li><a href="../index.php">Home</a></li>
+  <li><a href="index.php">Home</a></li>
 </ul>
 </div>
 <?php
@@ -39,16 +39,16 @@ if(mysqli_num_rows($result)>0)
 <section class="options" id="op">
 <div id="box">
 <div id="edit">
-<button onClick="window.location.href='../acceptor_edit_profile/edit_acceptor.php'">Edit Profile</button>
+<button onClick="window.location.href='edit_acceptor.php'">Edit Profile</button>
 </div>
 <div id="post">
-<button onClick="window.location.href='../post_request/PostRequest.php'">Post Request</button>
+<button onClick="window.location.href='PostRequest.php'">Post Request</button>
 </div>
 <div id="history">
-<button onClick="window.location.href='../acceptor_history/history.php'">History</button>
+<button onClick="window.location.href='history.php'">History</button>
 </div>
 <div id="de">
-<button onClick="window.location.href='../confirm/confirm_deactivate_acceptor.php'">Deactivate</button>
+<button onClick="window.location.href='confirm_deactivate_acceptor.php'">Deactivate</button>
 </div>
 </div>
 </section>

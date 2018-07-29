@@ -3,7 +3,7 @@
 	  $lid=$_SESSION["l_id"];
  if(!isset($_SESSION['l_id']))
 	  {
-      header("Location:../home/home.php"); 
+      header("Location:home.php"); 
 	  }
 ?>
 <!DOCTYPE html>
@@ -15,9 +15,9 @@
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
- <li><a href="../logout/logout.php">Logout</a></li>
-  <li><a href="../acceptor_login/Login_Acceptor.php">MyProfile</a></li>
-  <li><a href="../home/home.php">Home</a></li>
+ <li><a href="logout.php">Logout</a></li>
+  <li><a href="Login_Acceptor.php">MyProfile</a></li>
+  <li><a href="home.php">Home</a></li>
 </ul>
 </div>
   <body>
@@ -39,7 +39,7 @@
 	  <label class="label"> Full Name</label><input type="text"  name="name" value='<?php echo $data["name"]?> ' />
 	  <label class="label"> Address</label><input type="text" name="address" value=<?php echo $data["address"]?>  />
 	  <label class="label">Phone Number</label><input type="number" name="phone_no" value=<?php echo $data["phone_no"]?>  />
-	  <label class="label"><a href="change_password/change_password.php">Click here to Change Password</a></label>
+	  <label class="label"><a href="change_password.php">Click here to Change Password</a></label>
     <button name="submit">Save</button>
     </form>
      <?php

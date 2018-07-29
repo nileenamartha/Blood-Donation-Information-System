@@ -11,7 +11,7 @@ if($result)
 	?>
     <script>
 	alert("Successfully deactivated the profile");
-	window.location="../home/home.php";
+	window.location="home.php";
 	</script>
    <?php
 }

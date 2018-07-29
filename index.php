@@ -58,11 +58,11 @@
   </div>
  <!--Registration-->
  <div id="reg">
- <button> <h2>Become a <br>blood donor<br></h2><a href="../register/register.php">Register Now</a></button>
+ <button> <h2>Become a <br>blood donor<br></h2><a href="register.php">Register Now</a></button>
 
  </div>
  <div id="reg2">
- <button> <h2>In need of Blood?<br>Post Your Request<br></h2><a href="../acceptor_reg/acceptor_reg.php">Register Now</a></button>
+ <button> <h2>In need of Blood?<br>Post Your Request<br></h2><a href="acceptor_reg.php">Register Now</a></button>
  </div>
 <!--DonorSearch-->
 <div id="DonorSearch">

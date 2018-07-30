@@ -16,7 +16,7 @@
 	<li><a href="logout.php">Logout</a></li>
 	<li><a href="feedback.php">FeedBack</a></li>
 	<li><a href="wdb.php">Why Donate Blood</a></li>
-	<li><a href="index.php"></a></li>
+	<li><a href="index.php">Home</a></li>
 	</ul>
 	</div>
 	<?php
@@ -37,7 +37,7 @@
 	<li><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddy_ayim@gmail.com&item_name=Life+Stream+Blood+Bank&item_number=Fall+Cleanup+Campaign&amount=25%2e00&currency_code=USD">Donate With Paypal</a></li>
   <li><a href="feedback.php">FeedBack</a></li>
   <li><a href="wdb.php">Why Donate Blood</a></li>
-  <li><a href=>Home</a></li>
+  <li><a href=></a></li>
 </ul>
 </div>
   <?php

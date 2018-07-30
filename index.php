@@ -16,7 +16,7 @@
 	<li><a href="logout.php">Logout</a></li>
 	<li><a href="feedback.php">FeedBack</a></li>
 	<li><a href="wdb.php">Why Donate Blood</a></li>
-	<li><a href="index.php">Home</a></li>
+	<li><a href="index.php"></a></li>
 	</ul>
 	</div>
 	<?php

@@ -3,7 +3,7 @@
 	  $lid=$_SESSION["l_id"];
  if(!isset($_SESSION['l_id']))
 	  {
-      header("Location:../index.php"); 
+      header("Location:index.php"); 
 	  }
 ?>
 <!DOCTYPE html>
@@ -40,7 +40,7 @@
 	  $lid=$_SESSION["l_id"];
  if(!isset($_SESSION['l_id']))
 	  {
-      header("Location:../index.php"); 
+      header("Location:index.php"); 
 	  }
 ?>
 <!DOCTYPE html>

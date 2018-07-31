@@ -46,7 +46,7 @@ else
 		?>
 		<script>
 			alert("Registration Completed.");
-			window.location.href="home.php";
+			window.location.href="index.php";
 		</script>
 	<? }
 	else{

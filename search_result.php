@@ -63,7 +63,7 @@ $bloodgroup=$_GET["bloodgroup"];
 $state=$_GET["state"];
 $district=$_GET["district"];
 $location=$_GET["location"];
-  $conn = mysqli_connect("localhost", "root", "","blood_info");
+  $conn = mysqli_connect("cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "ji76idbl7xrpwijd", "ktsq582xb1j7ssmu","jlrcv5u4hn6l67a6");
   $sql="select name,gender,age,phone_no,status,email from donor_register where blood_group='$bloodgroup' and state='$state' and district='$district' and location='$location'";
   $result=mysqli_query($conn,$sql);
   if(mysqli_num_rows($result)>0)

@@ -28,7 +28,7 @@
 <button onClick="window.location.href='admin_donor_info.php'">Donor Details</button>
 </div>
 <div id="post">
-<button onClick="window.location.href='acceptor_details.php'">Acceptor Details</button>
+<button onClick="window.location.href='admin_acceptor_details.php'">Acceptor Details</button>
 </div>
 <div id="post">
 <button onClick="window.location.href='feedback.php'">Feedbacks</button>

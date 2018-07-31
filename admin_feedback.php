@@ -23,7 +23,7 @@
 </div>
   <body>
 <div class="title">
-  <h2>Feedback</h2>
+  <h2>Feedbacks</h2>
   <table>
   <tr>
   	<th>Sl no</th>

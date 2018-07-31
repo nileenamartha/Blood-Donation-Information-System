@@ -53,7 +53,7 @@ else
 		?>
 		<script>
 		alert("Error in Registration! Try again");
-		window.location.href="home.php";
+		window.location.href="index.php";
 		</script>
 		<?php
 	}

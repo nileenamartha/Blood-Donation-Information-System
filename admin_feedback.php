@@ -16,9 +16,9 @@
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-<li><a href="../logout/logout.php">Logout</a></li>
-  <li><a href="../admin_login/admin_login.php">MyProfile</a></li>
-  <li><a href="../index.php">Home</a></li>
+<li><a href="logout.php">Logout</a></li>
+  <li><a href="admin_login.php">MyProfile</a></li>
+  <li><a href="index.php">Home</a></li>
 </ul>
 </div>
   <body>
@@ -53,9 +53,9 @@
 <div id="navBar">
 <h2>LifeStream</h2>
 <ul>
-<li><a href="../logout/logout.php">Logout</a></li>
-  <li><a href="../admin_login/admin_login.php">MyProfile</a></li>
-  <li><a href="../index.php">Home</a></li>
+<li><a href="logout.php">Logout</a></li>
+  <li><a href="admin_login.php">MyProfile</a></li>
+  <li><a href="index.php">Home</a></li>
 </ul>
 </div>
   <body>

@@ -51,7 +51,7 @@
 	<th style="padding-top: 20px;"><?php echo $data["gender"]?></th>
 	<th><?php echo $data["phone_no"]?></th>
 	<th><?php echo $data["email"]?></th>
-	<th><a href="accept_donor.php?na=<?php echo $data["l_id"];?>"><?php  $sql1="select user_type from login where id='$lid'";
+	<th><a href="accept_donors.php?na=<?php echo $data["l_id"];?>"><?php  $sql1="select user_type from login where id='$lid'";
 	  $result1=mysqli_query($conn,$sql1);if(mysqli_num_rows($result1)>0){ while($status=mysqli_fetch_array($result1)){ if($status[0]=='pending'){ echo"Accept";?></a><?php } else { echo "Accepted";  }}}?><br><br> <a href="delete_donor.php?na=<?php echo $data["l_id"];?>">Delete</a></th>
   </tr>
   <?php

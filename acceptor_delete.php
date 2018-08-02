@@ -10,7 +10,7 @@ if($result)
 	?>
 	 <script>
 			alert("Deleted Successfully")
-			window.location="acceptor_details.php"
+			window.location="admin_acceptor_details.php"
 			</script>
             <?php
 }

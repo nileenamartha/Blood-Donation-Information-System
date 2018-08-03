@@ -37,7 +37,7 @@ body{
 	position:relative;
 	height: 450px;
 	background-size: cover;
-	background-image:url(../images/a3.jpg);
+	background-image:url(a3.jpg);
 }
 .homeTop #form-module {
    position: absolute;

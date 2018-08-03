@@ -31,7 +31,7 @@
 <button onClick="window.location.href='admin_acceptor_details.php'">Acceptor Details</button>
 </div>
 <div id="post">
-<button onClick="window.location.href='admin_feedback.php'">Feedbacks</button>
+<button onClick="window.location.href='ad_feedback.php'">Feedbacks</button>
 </div>
 
 </div>

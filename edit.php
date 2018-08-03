@@ -30,7 +30,7 @@
 <div class="module form-module">
   <!div class="form">
    <?php
-  $conn=mysqli_connect("cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "ji76idbl7xrpwijd", "ktsq582xb1j7ssmu","jlrcv5u4hn6l67a6"");
+  $conn=mysqli_connect("cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "ji76idbl7xrpwijd", "ktsq582xb1j7ssmu","jlrcv5u4hn6l67a6");
   $sql="select * from donor_register where l_id='$lid'";
   $result=mysqli_query($conn,$sql);
   if(mysqli_num_rows($result)>0)
@@ -127,7 +127,7 @@
 		$state=$_POST['state'];
 		$district=$_POST['district'];
 		$location=$_POST['location'];
-		$conn = mysqli_connect("localhost", "root", "","blood_info");
+		$conn = mysqli_connect("cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "ji76idbl7xrpwijd", "ktsq582xb1j7ssmu","jlrcv5u4hn6l67a6");
 		$sql="UPDATE donor_register SET name='$name',age='$age',blood_group='$bloodgroup',gender='$gender',dob='$dob',weight='$weight',address='$address',phone_no='$phone_no',state='$state',district='$district',location='$location',status='$status' WHERE l_id='$lid'";
 	$query=mysqli_query($conn,$sql);
   	if($query){

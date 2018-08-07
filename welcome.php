@@ -16,7 +16,7 @@ $result=mysqli_query($conn,$sql);
   // Config variables. Consult https://txtlocal.co.uk/docs for more info.
   $test = "0";
   // Data for text message. This is the text message data.
-  $sender = "Lifestream blood donation"; // This is who the message appears to be from.
+  $sender = "Lifestream"; // This is who the message appears to be from.
   $numbers = "$to"; // A single number or a comma-seperated list of numbers
   $message = "Welcome to Our Website LifeStream.";
   // 612 chars or less

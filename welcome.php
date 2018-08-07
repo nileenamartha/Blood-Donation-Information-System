@@ -32,7 +32,7 @@ $result=mysqli_query($conn,$sql);
 ?>
 <script>
 alert("");
-window.location="accept_donor.php";
+window.location="donor_accept.php";
 </script>
 
 

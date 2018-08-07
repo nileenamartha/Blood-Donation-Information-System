@@ -55,7 +55,7 @@
 				?>
 				<script>
 				alert("Request successfully accepted");
-				window.location="example.php?na=<?php echo $nid?>"
+				window.location="welcome.php?na=<?php echo $nid?>"
 				</script>
 				<?php
 			}

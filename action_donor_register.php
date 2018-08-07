@@ -25,7 +25,7 @@ if($pwd!=$cpwd)
 }
 else
 {
-    $conn = mysqli_connect(("cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "ji76idbl7xrpwijd", "ktsq582xb1j7ssmu","jlrcv5u4hn6l67a6")	$sql="INSERT INTO login VALUES (null,'$email','$pwd','pending','$phone_no')";
+    $conn = mysqli_connect("cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "ji76idbl7xrpwijd", "ktsq582xb1j7ssmu","jlrcv5u4hn6l67a6") $sql="INSERT INTO login VALUES (null,'$email','$pwd','pending','$phone_no')";
 	$result=mysqli_query($conn,$sql);
 	if(!$result)
 	{
@@ -57,7 +57,7 @@ else
 	// Config variables. Consult https://www.textlocal.com/product/send//docs for more info.
 	$test = "0";
 	// Data for text message. This is the text message data.
-	$sender = "LifeStream Blood donation"; // This is who the message appears to be from.
+	$sender = "LifeStream"; // This is who the message appears to be from.
 	$numbers = "$phone_no"; // A single number or a comma-seperated list of numbers
 	$message = "Welcome to Our Website of LifeStream Blood donation  Now you are sucsessfully Registered as Official Donner.";
 	// 612 chars or less
@@ -71,9 +71,6 @@ else
 	$result = curl_exec($ch); // This is the result from the API
 	curl_close($ch);
 ?>
-
-
-
 	<? }
 	else{
 		?>

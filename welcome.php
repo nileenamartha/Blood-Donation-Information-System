@@ -25,7 +25,7 @@ $result=mysqli_query($conn,$sql);
   // A single number or a comma-seperated list of numbers
   $message = urlencode($message);
   $data = "username=".$username."&hash=".$hash."&message=".$message."&sender=".$sender."&numbers=".$numbers."&test=".$test;
-  $ch = curl_init('https://txtlocal.co.uk /send/?');
+  $ch = curl_init('https://api.txtlocal.co.uk /send/?');
   curl_setopt($ch, CURLOPT_POST, true);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

@@ -16,8 +16,7 @@ if(mysqli_num_rows($result))
 			?>
             <script>
 			alert("Accepted Successfully!")
-		        window.location="welcome.php"
-			//window.location="admin_donor_info.php"
+			window.location="admin_donor_info.php"
 			</script>
             <?php
 		}

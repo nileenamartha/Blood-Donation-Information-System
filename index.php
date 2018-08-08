@@ -47,7 +47,6 @@
 <html lang="en">
 <head>
 <title>AJAX APIs</title>
-   <h1>AJAX Information API Application</h1>
     <input type="text" name="searchTerm" value="">
     <input type="button" id="search" value="search">
     <div id="outputWiki"></div>

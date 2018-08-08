@@ -12,6 +12,8 @@
 	<div id="navBar">
 	<h2>LifeStream</h2>
 	<ul>
+	<li><a href="wikipedia.php">Wikipedia</a><li>
+	<li><a href="Youtube.php">youtube</a><li>	
 	<li><a href="logout.php">Logout</a></li>
 	<li><a href="feedback.php">FeedBack</a></li>
 	<li><a href="wdb.php">Why Donate Blood</a></li>

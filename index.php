@@ -58,9 +58,9 @@
         }
 function showResults() 
 	    {
-            Var $searchTerm = document.querySelector('input[name="searchTerm"]').value
-            var $url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
-            var $outputWiki = document.querySelector('#outputWiki');
+            Var searchTerm = document.querySelector('input[name="searchTerm"]').value
+            var url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
+            var outputWiki = document.querySelector('#outputWiki');
               outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";
             ajaxJS(url, function (response) 
 		   {
@@ -73,9 +73,9 @@ function showResults()
 	    }
 function showResults()
 		    {
-            var &searchTerm = document.querySelector('input[name="searchTerm"]').value
-            var &url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
-            var &outputWiki = document.querySelector('#outputWiki');
+            var searchTerm = document.querySelector('input[name="searchTerm"]').value
+            var url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
+            var outputWiki = document.querySelector('#outputWiki');
             outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";
             ajaxJS(url, function (response) 
 		   {

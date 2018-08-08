@@ -61,7 +61,7 @@
 		  {
 			  echo 'No result found...';
 		  }
-  <?php	  
+  ?> 
  <?php	 	  
   }
   ?>

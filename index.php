@@ -126,6 +126,7 @@ function showResults()
                      outputWiki.innerHTML += '<div class="dataOutput">' + holder + '</div>';
                 })
 	    }
+		   }
 		   
  xhr.open('GET', url, true)
             xhr.send();

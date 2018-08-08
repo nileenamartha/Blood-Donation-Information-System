@@ -1,10 +1,16 @@
 <?php
-$nid=$_GET["na"];
+$lid=$_GET["na"];
+            <script>
+alert("assssss");
+</script>
 $conn=mysqli_connect("cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "ji76idbl7xrpwijd", "ktsq582xb1j7ssmu","jlrcv5u4hn6l67a6");
-$sql="select phone_no from notification where id='$nid'";
+$sql="select phone_no from donor_register where l_id='$lid'";
 $result=mysqli_query($conn,$sql);
       if(mysqli_num_rows($result)>0)
       {
+            <script>
+alert("assssss");
+</script>
           while($data=mysqli_fetch_array($result))
           {
         $to=$data["phone_no"];
@@ -17,7 +23,7 @@ $result=mysqli_query($conn,$sql);
   $test = "0";
   // Data for text message. This is the text message data.
   $sender = "Lifestream"; // This is who the message appears to be from.
-  $numbers = "$to"; // A single number or a comma-seperated list of numbers
+  $numbers = $to; // A single number or a comma-seperated list of numbers
   $message = "Welcome to Our Website LifeStream.";
   // 612 chars or less
   // A single number or a comma-seperated list of numbers
@@ -34,5 +40,3 @@ $result=mysqli_query($conn,$sql);
 alert("");
 window.location="admin_donor_info.php";
 </script>
-
-

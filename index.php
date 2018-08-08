@@ -13,7 +13,7 @@
 	<div id="navBar">
 	<h2>LifeStream</h2>
 	<ul>
-	<li><a target= href="https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;">Wikipedia</a><li>	
+	<li><a target="_blank"href="https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;">Wikipedia</a><li>	
 	<li><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddy_ayim@gmail.com&item_name=Life+Stream+Blood+Bank&item_number=Fall+Cleanup+Campaign&amount=25%2e00&currency_code=USD">Donate With Paypal</a></li>
 	<li><a href="logout.php">Logout</a></li>
 	<li><a href="feedback.php">FeedBack</a></li>
@@ -58,32 +58,32 @@
         }
 function showResults() 
 	    {
-            Var searchTerm = document.querySelector('input[name="searchTerm"]').value
-            var url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
-            var outputWiki = document.querySelector('#outputWiki');
-            outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";
+            Var $searchTerm = document.querySelector('input[name="searchTerm"]').value
+            var $url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
+            var $outputWiki = document.querySelector('#outputWiki');
+              outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";
             ajaxJS(url, function (response) 
 		   {
                 console.log(response)
                 for (var x in response) 
 		{
-                    var holder = typeof response[x] == 'string' ? response[x] : response[x][0];
+                    var $holder = typeof response[x] == 'string' ? response[x] : response[x][0];
                     outputWiki.innerHTML += '<div class="dataOutput">' + holder + '</div>';
                 })
 	    }
 function showResults()
 		    {
-            var searchTerm = document.querySelector('input[name="searchTerm"]').value
-            var url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
-            var outputWiki = document.querySelector('#outputWiki');
-            var outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";
+            var &searchTerm = document.querySelector('input[name="searchTerm"]').value
+            var &url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
+            var &outputWiki = document.querySelector('#outputWiki');
+            outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";
             ajaxJS(url, function (response) 
 		   {
                 console.log(response)
-                for (var x in response) 
+                for (var $x in response) 
 		{
-                     holder = typeof response[x] == 'string' ? response[x] : response[x][0];
-                    outputWiki.innerHTML += '<div class="dataOutput">' + holder + '</div>';
+                     var $holder = typeof response[x] == 'string' ? response[x] : response[x][0];
+                     outputWiki.innerHTML += '<div class="dataOutput">' + holder + '</div>';
                 })
 	    }
     </script>

@@ -12,7 +12,7 @@
 	<div id="navBar">
 	<h2>LifeStream</h2>
 	<ul>
-	<li><a target="_blank" href= href="https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;">Wikipedia</a><li>	
+	<li><a target="_blank" href="https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;">Wikipedia</a><li>	
 	<li><a href="logout.php">Logout</a></li>
 	<li><a href="feedback.php">FeedBack</a></li>
 	<li><a href="wdb.php">Why Donate Blood</a></li>

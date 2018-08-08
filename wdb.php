@@ -40,6 +40,97 @@
   <?php
   }
   ?>
+	<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AJAX APIs</title>
+    <style>
+        .dataOutput {
+            padding: 10px;
+            border: 1px solid #eee;
+        }
+        
+        .wrap {
+            width: 100%;
+            position: relative;
+        }
+        
+        .panel {
+            width: 25%;
+            display: inline-block;
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .panel img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .panel .content {
+            width: 100%;
+            font-size: 0.7em;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            position: absolute;
+            padding: 10px;
+            left: 0;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="searchTerm" value="">
+    <input type="button" id="search" value="search">
+    <div id="outputWiki"></div>
+    <script>
+        window.onload=function()
+	{
+            document.getElementById('search').addEventListener('click', showResults)
+        }
+function showResults() 
+	    {
+            Var searchTerm = document.querySelector('input[name="searchTerm"]').value
+            var url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
+            var outputWiki = document.querySelector('#outputWiki');
+              outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";
+            ajaxJS(url, function (response) 
+		   {
+                console.log(response)
+                for (var x in response) 
+		{
+                    var $holder = typeof response[x] == 'string' ? response[x] : response[x][0];
+                    outputWiki.innerHTML += '<div class="dataOutput">' + holder + '</div>';
+                })
+	    }
+function showResults()
+		    {
+            var searchTerm = document.querySelector('input[name="searchTerm"]').value
+            var url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;
+            var outputWiki = document.querySelector('#outputWiki');
+            outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";
+            ajaxJS(url, function (response) 
+		   {
+                console.log(response)
+                for (var $x in response) 
+		{
+                     var $holder = typeof response[x] == 'string' ? response[x] : response[x][0];
+                     outputWiki.innerHTML += '<div class="dataOutput">' + holder + '</div>';
+                })
+	    }
+		   }
+		   
+ xhr.open('GET', url, true)
+            xhr.send();
+        }
+    </script>
+</body>
+</html>		    	
 <section class="homeTop" id="top">
 <div id="text">
 <p>

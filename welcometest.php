@@ -12,9 +12,9 @@ $result=mysqli_query($conn,$sql);
 
 
 <?php
-  // Authorisation details.
-  $username = "jasalonline@gmail.com";
-  $hash = "b74ad0f4e67db723271535dd736faf1fb27f8763aeae9ba8c97881133eb73afa";
+ 	// Authorisation details.
+	$username = "nileenamv@gmail.com";
+	$hash = "bdbb469355e2139b95b6e545bee29c6d4027d7e19d482f0782aed18fe75350f6";
 
   // Config variables. Consult http://api.textlocal.in/docs for more info.
   $test = "0";
@@ -27,7 +27,7 @@ $result=mysqli_query($conn,$sql);
   // A single number or a comma-seperated list of numbers
   $message = urlencode($message);
   $data = "username=".$username."&hash=".$hash."&message=".$message."&sender=".$sender."&numbers=".$numbers."&test=".$test;
-  $ch = curl_init('http://api.textlocal.in/send/?');
+  $ch = curl_init('http://api.txtlocal.com/send/?');;
   curl_setopt($ch, CURLOPT_POST, true);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -36,5 +36,5 @@ $result=mysqli_query($conn,$sql);
 ?>
 <script>
 alert("");
-window.location="../admin_donor_info.php";
+window.location="admin_donor_info.php";
 </script>

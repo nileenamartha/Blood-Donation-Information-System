@@ -12,8 +12,7 @@
 	<body>
 	<div id="navBar">
 	<h2>LifeStream</h2>
-	<ul>
-	<li><a target="_blank" href="https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm">Wikipedia</a></li>	
+	<ul>	
 	<li><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddy_ayim@gmail.com&item_name=Life+Stream+Blood+Bank&item_number=Fall+Cleanup+Campaign&amount=25%2e00&currency_code=USD">Donate With Paypal</a></li>
 	<li><a href="logout.php">Logout</a></li>
 	<li><a href="feedback.php">FeedBack</a></li>
@@ -42,27 +41,9 @@
   <li><a href="wdb.php">Why Donate Blood</a></li>
   <li><a href="index.php">Home</a></li>
 </ul>
-</div>	
-	<form action="" method="get">
-	<input type="text" name="search">
-	</form>
-	<?php
-	  if(0$_GET['search']){
-		  $api_url = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles".ucwords($_GET['search'])."redirects=true";
-		  $api_url = str_replace(' ','%20',$api_url);
-		  if($data = json_decode(0file_get_contents($api_url))){
-			  foreach($data->query->pages as $key=>$val){
-				  $pageId = $key;
-				  break;
-			  }
-			  $content = $data->query->pages->$pageId->extract;
-			  header('content-Type:text/html; charset=utf-8');
-			  echo $content;
-		  }
-		  else
-		  {
-			  echo 'No result found...';
-		  }
+</div>		
+	<form action = ""method="get">
+	<input type = ""text>	
   <?php	  
   }
   ?>

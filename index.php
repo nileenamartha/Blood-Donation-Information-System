@@ -42,12 +42,60 @@
   <li><a href="wdb.php">Why Donate Blood</a></li>
   <li><a href="index.php">Home</a></li>
 </ul>
-</div>
-  <?php
+</div>	
+<? php
+echo '<!doctype html>';
+echo '<html lang="en">';
+echo '<head>';
+echo '<title>AJAX APIs</title>';
+echo '<h1>AJAX Information API Application</h1>';
+echo '<input type="text" name="searchTerm" value="">';
+echo '<input type="button" id="search" value="search">';
+echo '<div id="outputWiki"></div>';
+echo '<script>';
+echo 'window.onload=function()';
+echo '{';
+echo 'document.getElementById('search').addEventListener('click', showResults)';
+echo '}';
+echo 'function showResults()';
+echo '{';
+echo 'Var searchTerm = document.querySelector('input[name="searchTerm"]').value';
+echo 'var url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;';
+echo 'var outputWiki = document.querySelector('#outputWiki');';
+echo 'outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";';
+echo 'ajaxJS(url, function (response)';
+echo '{';
+echo 'console.log(response)';
+echo 'for (var x in response)';
+echo '{';
+echo 'var holder = typeof response[x] == 'string' ? response[x] : response[x][0];';
+echo 'outputWiki.innerHTML += '<div class="dataOutput">' + holder + '</div>';';
+echo '})';
+echo '}';
+echo 'function showResults()';
+echo '{';
+echo 'var searchTerm = document.querySelector('input[name="searchTerm"]').value';
+echo 'url = 'https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search=' + searchTerm;';
+echo 'outputWiki = document.querySelector('#outputWiki');';
+echo 'outputWiki.innerHTML = "<h2>Search Term " + searchTerm + "<h2>";';
+echo 'ajaxJS(url, function (response)';
+echo '{';
+echo 'console.log(response)';
+echo 'for (var x in response)';
+echo '{';
+echo 'holder = typeof response[x] == 'string' ? response[x] : response[x][0];';
+echo 'outputWiki.innerHTML += '<div class="dataOutput">' + holder + '</div>';';
+echo '})';
+echo '}';
+echo '</script>';
+echo '</head>';
+echo '</body>';
+echo '</html>';
+?>		
+  <?php	  
   }
   ?>
 <section class="homeTop" id="top">
-
 <!-- Form Module-->
 <div id="form-module">
   <!div class="form">

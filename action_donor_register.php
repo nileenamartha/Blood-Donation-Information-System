@@ -57,7 +57,7 @@ else
 	// Config variables. Consult https://www.textlocal.com/product/send//docs for more info.
 	$test = "0";
 	// Data for text message. This is the text message data.
-	$sender = "LifeStream Blood donation"; // This is who the message appears to be from.
+	$sender = "LifeStream"; // This is who the message appears to be from.
 	$numbers = "$phone_no"; // A single number or a comma-seperated list of numbers
 	$message = "Welcome to Our Website of LifeStream Blood donation  Now you are sucsessfully Registered as Official Donor.";
 	// 612 chars or less

@@ -47,7 +47,7 @@
 <!-- Form Module-->
 <div class="module form-module">
   <!div class="form">
-    <form style="margin-top: 13px;" method="post" action="action_donor_register.php">
+    <form style="margin-top: 13px;" method="post" action="actionn_donor_register.php">
 	  <label class="label"> Full Name</label><input type="text" name="name" required/>
 	   <label class="label">Age</label><input type="text"name="age" required/>
 	     <label class="label">Bloodgroup</label>

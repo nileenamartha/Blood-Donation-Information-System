@@ -50,7 +50,7 @@ else
 
 	$numbers = array($phone_no);
 	$sender = 'Lifestream';
-	$message = 'Welcome to LifeStream';
+	$message = 'Welcome to LifeStream.Thank you for registering with us';
 
 	try {
 	    $result = $textlocal->sendSms($numbers, $message, $sender);
